@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+<div id="qrcode"></div>
+<script>
+    let qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: "https://play.google.com/store/apps/details?id=ru.multistudia.animascope",
+        width: 1024,
+        height: 1024
+    });
+</script>
+</body>
+</html>
